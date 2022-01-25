@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Nunito+Sans&family=Viga&display=swap');
+.navbar-brand{ 
+    font-size: 24px;
+    font-family: 'Viga', sans-serif;
+}
+.nav-link{
+    margin-right: 0.8rem;
+    text-transform: capitalize;
+}
+/* Desktop Version */
+@media (min-width: 992px) {
+    .nav-link{
+        margin-right: 0.8rem;
+        text-transform: uppercase;
+    }
+    .navbar {
+        background: transparent;
+    }
+}
+@media (min-width: 1200px) {
+    .nav-link{
+        margin-right: 0.8rem;
+        text-transform: uppercase;
+    }
+    .navbar {
+        background: transparent;
+    }
+}
+@media (min-width: 1400px) {
+    .nav-link{
+        margin-right: 0.8rem;
+        text-transform: uppercase;
+    }
+    .navbar {
+        background: transparent;
+    }
+}
+@media (max-width: 991px) {
+    .navbar {
+        background: #50489b;
+    }
+}
+h3 {
+    font-family: 'Arvo', serif;
+    letter-spacing: 1.3px;
+}
+div.jumbotron {
+    display: flex;
+    flex-direction: column;
+    height: 520px;
+    align-items: center;
+    justify-content: center;
+    background-image:  linear-gradient(to right,rgba(98, 71, 170, 0.8),  rgba(114, 81, 181, 0.8)), url(img/jumbotron-img\ \(3\).jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top: -75px;
+    color: white;
+}
+.text-shadow {
+    text-shadow: 1px 1px 1px black;
+}
+.tombol {
+    background: transparent;
+    width: 100%;
+    border-radius: 20px;
+    color: #FCE72D;
+    padding: 5px 1.5rem;
+    border: 2px solid #FCE72D;
+    text-transform: uppercase;
+}
+.tombol:hover {
+    background: transparent;
+    width: 100%;
+    border-radius: 20px;
+    color: #FCE72D;
+    border: 2px solid #FCE72D;
+}
+.tombol-kuning {
+    background: #FCE72D;
+    color: black;
+    padding: 3px 1.9rem;
+    border-radius: 30px;
+    margin-top: 1rem;
+    text-shadow: 1px 1px 1px rgb(189, 189, 189);
+}
+section {
+    padding-top: 4rem;
+}
+.wrap-content {
+    width: 100%;
+}

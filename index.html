@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- CSS File -->
+    <link rel="stylesheet" href="main.css" />
+    <!-- Bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" />
+    <title>BAKRI BLOG</title>
+    <style>
+      a.explore-topics {
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+        transition: 0.4s ease;
+      }
+      a:hover {
+        color: #50489b;
+      }
+    </style>
+  </head>
+  <body class="bg-white" id="home">
+    <!-- Navbar Section Start -->
+    <!-- <nav class="navbar navbar-expand-lg navbar-dark fixed-top border-bottom" style="background: #50489b">
+      <div class="container">
+        <a class="navbar-brand text-uppercase" href="#">bakri blog</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link actived" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#post-kontent">Post</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav> -->
+
+    <nav class="navbar navbar-dark">
+      <div class="container">
+        <a class="navbar-brand text-uppercase" href="#">Bakri Blog</a>
+        <div class="dropdown">
+          <button class="btn" type="button" style="background: #50489b" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-list text-white fs-5"></i></button>
+          <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="dropdownMenuButton1">
+            <li><a class="dropdown-item" href="index.html">Home</a></li>
+            <li><a class="dropdown-item" href="about.html">About</a></li>
+            <li><a class="dropdown-item" href="#post-kontent">Post</a></li>
+            <li><a class="dropdown-item" href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Navbar Section End -->
+
+    <!-- Jumbotron Section Start -->
+    <section class="jumbotron shadow-sm" id="home">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h2 class="text-center text-white teks-judul"></h2>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-6 text-center">
+            <a href="#post-kontent" class="btn btn-gradient mt-3 me-2 shadow-xl" data-aos="zoom-in" role="button">Blog Post</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Jumbotron Section End -->
+
+    <!-- Post and recent toggle Section Start -->
+    <section id="post-kontent" class="pt-2">
+      <div class="container">
+        <div class="row justify-content-center pt-4">
+          <div class="col-md-8 mb-3" data-aos="fade-out">
+            <h2 class="text-uppercase text-dark pb-3">Trending Topic</h2>
+            <div class="content-post pt-3 bg-light rounded border">
+              <img src="image/blended-learning-post.jpeg" alt="img-post-1" class="img-fluid rounded mx-auto d-block gallery-item cursorPointer" width="700px" />
+              <div class="paragraf-post p-3">
+                <h3 class="text-dark">On Preparing the New Normal with Technology</h3>
+                <p class="text-dark">
+                  NEW normal, istilah yang sering kita dengar sejalan dengan munculnya pola hidup dan tatanan baru akibat dampak pandemi Covid-19. New normal dalam pendidikan, sebaiknya tidak hanya mengejar pencapaian target kurikulum
+                  (materi), melainkan juga harus memperhatikan kesehatan dan keselamatan peserta didik.
+                </p>
+                <a href="blog-Selengkapnya.html" class="btn btn-gradasi text-white shadow-sm mb-2">Selengkapnya</a>
+                <hr class="text-dark" />
+                <a class="aHover text-dark" href="about.html"><i class="bi bi-person-fill fs-5"></i> <span class="ms-1">By Bakri</span></a>
+                <button class="btn btn-share-style ms-4 text-dark" id="buttonShare"><i class="bi bi-share-fill fs-5"></i> <span class="ms-1">Share</span></button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4" data-aos="flip-right">
+            <div class="pembungkus-konten bg-light rounded border">
+              <ul class="nav nav-pills mb-3 pt-3 justify-content-center" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link active text-dark" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Popular</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link text-dark ms-3" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Recent</button>
+                </li>
+              </ul>
+              <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                  <div class="content-popular-post border-2px-gradient d-flex p-3 align-items-center">
+                    <img src="image/tabs-1.jpg" alt="recent-post" class="img-fluid rounded-circle" width="70px" />
+                    <p class="text-dark ms-3">1.Bitcoin price raise after sudden fall</p>
+                  </div>
+                  <div class="content-popular-post border-2px-gradient d-flex p-3 align-items-center">
+                    <img src="image/tabs-2.jpg" alt="recent-post" class="img-fluid rounded-circle" width="70px" />
+                    <p class="text-dark ms-3">2.Clubhouse Crosses 1Mn Downloads On Play Store!</p>
+                  </div>
+                  <div class="content-popular-post border-2px-gradient d-flex p-3 align-items-center">
+                    <img src="image/tabs-3.jpg" alt="recent-post" class="img-fluid rounded-circle" width="70px" />
+                    <p class="text-dark ms-3">3.Check current Gold Price of 24k</p>
+                  </div>
+                  <div class="content-popular-post border-2px-gradient d-flex p-3 align-items-center">
+                    <img src="image/tabs-4.png" alt="recent-post" class="img-fluid rounded-circle" width="70px" />
+                    <p class="text-dark ms-3">4.Improve your mails with Grammarly</p>
+                  </div>
+                  <div class="content-popular-post border-2px-gradient d-flex p-3 align-items-center">
+                    <img src="image/engbreaking.jpeg" alt="recent-post" class="img-fluid rounded" width="70px" />
+                    <p class="text-dark ms-3">5.Improve your english with Engbreaking</p>
+                  </div>
+                  <div class="content-popular-post border-2px-gradient d-flex p-3 align-items-center">
+                    <img src="image/codeacademy.png" alt="recent-post" class="img-fluid rounded" width="70px" />
+                    <p class="text-dark ms-3">6.Improve your programming skill with codeacademy</p>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                  <div class="content-recent-post border-2px-gradient d-flex p-3 align-items-center">
+                    <img src="image/github.png" alt="recent-post" class="img-fluid rounded" width="70px" />
+                    <p class="text-dark ms-3">7.Upload your website using github pages.</p>
+                  </div>
+                  <div class="content-recent-post border-2px-gradient d-flex p-3 align-items-center">
+                    <img src="image/metaverse.jpeg" alt="recent-post" class="img-fluid rounded" width="70px" />
+                    <p class="text-dark ms-3">8.What does metaverse mean</p>
+                  </div>
+                  <div class="content-recent-post border-2px-gradient d-flex p-3 align-items-center">
+                    <img src="image/github-copilot.jpeg" alt="recent-post" class="img-fluid rounded-circle" width="70px" />
+                    <p class="text-dark ms-3">8.Will Github Copilot Replace Developers.</p>
+                  </div>
+                  <div class="content-recent-post border-2px-gradient d-flex p-3 align-items-center">
+                    <img src="image/trading.jpeg" alt="recent-post" class="img-fluid rounded" width="70px" />
+                    <p class="text-dark ms-3">9.Trading in 2022</p>
+                  </div>
+                  <div class="content-recent-post d-flex p-3 align-items-center">
+                    <img src="image/tabs-3.jpg" alt="recent-post" class="img-fluid rounded-circle" width="70px" />
+                    <p class="text-dark ms-3">10.Should we invest in soverign gold bonds</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="latest-post" class="pt-2">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 mb-3" data-aos="fade-up" data-aos-duration="1000">
+            <h2 class="text-uppercase text-dark mt-2 mb-4">latest post</h2>
+            <div class="content-post pt-3 bg-light border rounded">
+              <img src="image/methode-blended-learning.jpeg" alt="img-post-1" class="img-fluid rounded mx-auto d-block gallery-item cursorPointer" width="700px" />
+              <div class="paragraf-post p-3">
+                <h3 class="text-dark">Alasan Diterapkannya Blended Learning sebagai Metode Pembelajaran Baru di Abad 21</h3>
+                <p class="text-dark">
+                  Proses pembelajaran di kelas secara tatap muka (face-to-face) telah kehilangan daya tariknya dikalangan pelajar maupun mahasiswa. Hal ini tidak lain dikarenakan pesatnya kemajuan teknologi informasi dan komunikasi di abad
+                  21, sehingga memaksa guru dan komite yang mengajar siswa di setiap tingkat pendidikan untuk mengubah perilaku dan pola pikir mereka guna tercapainya tujuan pengajaran di sekolah.
+                </p>
+                <p class="text-dark">
+                  Sistem pembelajaran tatap muka secara tidak langsung mulai tergantikan dengan pembelajaran era digital.Pembelajaran era digital yang banyak dikembangkan oleh praktisi pendidikan yakni pembelajaran secara online.
+                </p>
+                <a href="blog-Selengkapnya2.html" class="btn btn-gradasi text-white shadow mb-2">Selengkapnya</a>
+                <hr class="text-dark" />
+                <a class="aHover text-dark" href="about.html"><i class="bi bi-person-fill fs-5"></i> <span class="ms-1">By Bakri</span></a>
+                <button class="btn btn-share-style text-dark ms-4 shareButton"><i class="bi bi-share-fill fs-5"></i> <span class="ms-1">Share</span></button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mt-3" data-aos="fade-out" data-aos-duration="1000">
+            <div class="pembungkus-kontent-detailnya border rounded text-white p-4" style="border-radius: 5px !important">
+              <h3 class="text-capitalize text-center text-dark">bakri blog</h3>
+              <p class="text-dark text-justify">
+                Bakri Blog adalah blog yang berisi membahas seputar dunia teknologi, yang mungkin akan menambah wawasan teman teman sekalian, dan sekaligus saya ingin menyamapiakn jika ingin mengetahui saya lebih lanjut silahkan klik link
+                About.
+              </p>
+              <div class="sosial-media-link text-center">
+                <a class="btn teks-gradasi fs-5" target="_blank" href="https://www.instagram.com/abu_bakartarsum/" role="button"><i class="bi bi-instagram"></i></a>
+                <a class="btn teks-gradasi fs-5" target="_blank" href="https://github.com/ABUBAKARTARSUM" role="button"><i class="bi bi-github"></i></a>
+                <a class="btn teks-gradasi fs-5" target="_blank" href="https://www.linkedin.com/in/abu-bakar-tarsum-474b4a217/" role="button"><i class="bi bi-linkedin"></i></a>
+                <a class="btn teks-gradasi fs-5" target="_blank" href="https://wa.me/628111032598" role="button"><i class="bi bi-whatsapp"></i></a>
+              </div>
+            </div>
+            <div class="pembungkus-subscribe p-3 mt-3 bg-light rounded">
+              <h3 class="text-capitalize text-center text-dark">Subscribe Blog</h3>
+              <form name="project-contact-form">
+                <div class="mb-3">
+                  <label for="email" class="form-label text-dark">Email address</label>
+                  <input type="email" class="form-control" id="email" aria-describedby="email" />
+                  <button type="submit" class="btn btn-gradasi btn-kirim text-white shadow-sm mt-3">Submit</button>
+                  <button class="btn btn-gradasi text-white btn-loading d-none mt-3" type="button" disabled>
+                    <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                    Loading...
+                  </button>
+                </div>
+              </form>
+            </div>
+            <div class="wrap-content border rounded p-3 mt-3 mb-3 bg-light">
+              <h3 class="text-dark text-center p-3">Explore Topics</h3>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item bg-light p-3">
+                  <a href="#" class="explore-topics"><i class="bi bi-chevron-right text-dark"></i> Trending</a>
+                </li>
+                <li class="list-group-item bg-light p-3">
+                  <a href="#" class="explore-topics"><i class="bi bi-chevron-right text-dark"></i> Politics</a>
+                </li>
+                <li class="list-group-item bg-light p-3">
+                  <a href="#" class="explore-topics"><i class="bi bi-chevron-right text-dark"></i> Fashion</a>
+                </li>
+                <li class="list-group-item bg-light p-3">
+                  <a href="#" class="explore-topics"><i class="bi bi-chevron-right text-dark"></i> Lifestyle</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Post and recent ~ popular toggle Section End -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="gallery-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content" style="background: rgb(65, 65, 65); border: none">
+          <div class="modal-header">
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body p-0 m-0">
+            <img src="" class="modal-img rounded mx-auto d-block p-0 m-0" alt="modal img" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Akhir Modal -->
+
+    <!-- Footer -->
+    <section class="footer pt-4 pb-3 bg-light" id="follow">
+      <div class="container" data-aos="fade-in">
+        <div class="row justify-content-center">
+          <div class="col-md-4">
+            <div class="pembungkus-deskripsi p-2">
+              <h2 class="text-uppercase">bakri blog</h2>
+              <p class="text-capitalize text-muted">Designed by Bakri Developer</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="pembungkus-links p-2">
+              <h2>Links</h2>
+              <a class="text-capitalize" href="privacyPolicy.html" role="button">Privacy Policy</a><br />
+              <a class="text-capitalize" href="termsOfServices.html" role="button">Terms Of service</a><br />
+              <a class="text-capitalize" href="https://ssc.stiki.ac.id/" target="_blank" role="button">ssc.stiki.ac.id/</a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="pembungkus-links p-2">
+              <h2>Quick Links</h2>
+              <a class="text-capitalize" href="index.html" role="button">Home</a><br />
+              <a class="text-capitalize" href="about.html" role="button">About</a><br />
+              <a class="text-capitalize" href="#post-kontent" role="button">Post</a><br />
+              <a class="text-capitalize" href="contact.html" role="button">Contact</a><br />
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col">
+            <hr class="text-dark" />
+          </div>
+        </div>
+        <div class="row pb-3">
+          <div class="col-md-6 d-flex align-items-center">
+            <div class="pembungkus-teks-hakCipta">
+              <p class="text-muted text-capitalize">all right reserved</p>
+            </div>
+          </div>
+          <div class="col-md-4 ms-auto">
+            <img src="image/logo-bakri.png" width="70px" height="70px" alt="logo-bakri" class="img-fluid rounded text-center me-1" />
+            <img src="image/stiki.png" width="80px" height="80px" alt="logo stiki" class="img-fluid rounded-circle text-center" />
+            <img src="image/Logo_SMA_BSS.png" width="80px" height="80px" alt="logo stiki" class="img-fluid rounded-circle text-center" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Akhir Footer -->
+
+    <!-- Bootstrap Javscript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- SweetAlert Javascript dokumenttasi -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <!-- GSAP3 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/TextPlugin.min.js"></script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- jQuery Framework JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Javascript File -->
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,154 @@
+/* fonts google */
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Calistoga&family=Changa+One&family=Coiny&family=Monoton&family=Nunito:wght@300&family=Saira+Stencil+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Saira+Stencil+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Saira+Stencil+One&family=Suez+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Nunito&family=Saira+Stencil+One&family=Suez+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Nunito&family=Saira+Stencil+One&family=Suez+One&family=Titan+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Nunito&family=Patua+One&family=Saira+Stencil+One&family=Suez+One&family=Titan+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Nunito+Sans&family=Viga&display=swap');
+
+/* start style */
+.border-gradient-style {
+  border: 2px solid rgb(134, 134, 134);
+}
+.navbar-brand {
+  font-family: 'Viga', cursive;
+}
+@media (min-width: 992px) {
+  .nav-link {
+    margin-right: 1rem;
+  }
+  .pembungkus-konten {
+    margin-top: 4.1rem;
+  }
+}
+@media (min-width: 768px) {
+  .pembungkus-konten {
+    margin-top: 4.1rem;
+  }
+}
+.btn-gradient {
+  background: rgba(255, 255, 255, 0.4);
+  width: 40%;
+  border-radius: 20px;
+  border: 3px solid rgba(255, 255, 255, 0.4);
+  color: #50489b;
+}
+.btn-gradient {
+  color: #50489b;
+}
+.btn-gradasi {
+  background-image: linear-gradient(315deg, #6e72fc 0%, #ad1deb 74%);
+  border-radius: 20px;
+  width: 40%;
+}
+.btn-share-style {
+  color: white;
+}
+.btn-share-style:hover {
+  color: #50489b;
+}
+section.jumbotron {
+  background-image: linear-gradient(to right, rgba(98, 71, 170, 0.8), rgba(114, 81, 181, 0.8)), url(image/image-jumbotron.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 480px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 4rem;
+  margin-top: -80px;
+}
+section.jumbotron h2 {
+  font-family: 'Coiny', cursive;
+  text-shadow: 3px 0 2px #252525;
+}
+section#post-kontent h2 {
+  font-family: 'Saira Stencil One', cursive;
+}
+section#latest-post h2 {
+  font-family: 'Saira Stencil One', cursive;
+}
+.aHover {
+  text-decoration: none;
+  color: white;
+  transition: 0.3s ease;
+}
+.aHover:hover {
+  color: #ddd;
+}
+.tumpul {
+  border-radius: 5px;
+}
+.tumpul-lg {
+  border-radius: 10px;
+}
+.border-2px-gradient {
+  border-bottom: 1px solid #acacac;
+}
+.teks-gradasi {
+  color: #202020;
+}
+.bg-gradasi-alpha {
+  background: rgba(40, 39, 38, 0.25);
+  border-bottom: #3f3f3f solid 2px;
+}
+.teks-gradasi:hover {
+  color: #ad1deb;
+}
+.form-control {
+  background: rgb(219, 219, 219);
+  border: none;
+  outline: none;
+  color: white;
+  font-family: 'Nunito', cursive;
+  border-radius: 25px;
+}
+.form-control:focus {
+  background: rgb(219, 219, 219);
+  outline: none;
+  color: rgb(34, 34, 34);
+  font-family: 'Nunito', cursive;
+}
+h3 {
+  font-family: 'Suez One', serif;
+}
+img {
+  max-width: 100%;
+}
+.cursorPointer {
+  cursor: pointer;
+}
+.gallery {
+  border-radius: 12px;
+}
+.gallery img {
+  width: 100%;
+  cursor: pointer;
+}
+#gallery-modal .modal-img {
+  width: 100%;
+}
+section#follow h2 {
+  font-family: 'Patua One', cursive;
+  color: #ad1deb;
+}
+section#follow a {
+  color: rgb(177, 177, 177);
+  transition: 0.3s ease;
+  text-decoration: none;
+}
+section#follow a:hover {
+  color: #50489b;
+  text-decoration: none;
+}
+.nav-link.actived {
+  color: white !important;
+}
+.nav-link.active {
+  background-image: linear-gradient(315deg, #6e72fc 0%, #ad1deb 74%);
+  border: 1px solid #ffffff;
+  border-radius: 20px;
+}
